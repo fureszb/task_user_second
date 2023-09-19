@@ -34,6 +34,7 @@ class TaskController extends Controller
         $task->user_id = $request->user_id;
         $task->status = $request->status;
         $task->save();
+        return redirect('/task/list');
     }
     public function update(Request $request, $id)
     {

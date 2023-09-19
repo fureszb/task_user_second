@@ -4,7 +4,7 @@
     <input type="text" name="description" placeholder="Description">
     <select name="user_id" placeholder="User Id">
         @foreach ($users as $user)
-        <option value="{{$user->id}}">{{$user->name}}</option>
+        <option value="{{$user->id}}"> {{$user->name}}</option>
         @endforeach
     </select>
     <input type="date" name="end_date" placeholder="End_date">
